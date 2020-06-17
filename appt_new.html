@@ -297,8 +297,8 @@ button:hover {
                         <p class="pst_toppadder10 pst_bottompadder30"></p>
 
                        
-                   <form action="https://formspree.io/priteechaugule@gmail.com" method="POST">
-                   
+                   <form id="appointmentform" action="https://formsubmit.io/send/b13c7f50-7c75-44d9-881b-4a01e3759ac9" method="POST">
+    <input name="_redirect" type="hidden" id="name" value="https://kodeitsolution.github.io/hytech/appt_new.html">
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="inquiry_section-pos">
@@ -316,7 +316,7 @@ button:hover {
                                                         <div class="inquiry_section-p">
                                                             <div class="form-group">
                                                                 <label class="sr-only">Phone</label>
-                                                                <input type="text" name="contact_no" placeholder="Phone" class="require form-control">
+                                                               <input type="tel" id="phone" name="phone" pattern="[789][0-9]{9}"  class="require form-control" required>
                                                                 
                                                             </div>
                                                         </div>
@@ -364,7 +364,7 @@ button:hover {
                                                         <div class="cntct_2_btn_wrapper">
                                                         <!--<input type="submit" name="submit"/>-->
                                                         <center>
-                                                        <input type="submit" class="btn cntct_btn submitForm"  name="submit"/>
+                                                        <button onclick="myFunction()" button type="submit" value="Submit">Send</button>
                                                         </center><!--</button>-->
                                                         </div>
                                                     </div>
@@ -372,6 +372,12 @@ button:hover {
                         <!-- /.row -->
                         
 					</form>
+						<script>
+                                    function myFunction() {
+                                      alert("Your oppointment book succesfully");
+                                    }
+                                    </script>
+                              </div>
 				</div>
 			</div>
 
