@@ -876,15 +876,22 @@ input[type=submit]:hover {
                         <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email.<br>We would be happy to answer your questions.</p>
                     </div>
                 </div>
-		     <form action="https://formspree.io/priteechaugule@gmail.com" method="POST">
+		    <form id="QueryForm" action="https://formsubmit.io/send/b13c7f50-7c75-44d9-881b-4a01e3759ac9" method="POST">
+    <input name="_redirect" type="hidden" id="name" value="https://kodeitsolution.github.io/hytech/about_us_new.html">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                          <!--<div class="wrapper_email_button pst_toppadder10">-->
             
                                  <p> <textarea id="subject" name="subject" placeholder="Enter your Query" style="height:90px"></textarea></p>
                               
-                                  <input type="submit" value="Submit">
+                                   <button onclick="myFunction()" button type="submit" value="Submit">send</button>
+                                  
                              
                                 </form>
+                                <script>
+                                    function myFunction() {
+                                      alert("Your Query has been sent succesfully");
+                                    }
+                                    </script>
                               </div>
                 </div>
             </div>
