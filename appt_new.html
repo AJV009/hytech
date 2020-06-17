@@ -28,7 +28,7 @@ Purchase:
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+button{
     width:150px;
     height:50px;
   background-color: #ecc204;
@@ -40,7 +40,7 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+button:hover {
   background-color:  black;
   color:#ecc204;
   border-color: #ecc204;
@@ -412,15 +412,22 @@ input[type=submit]:hover {
                         <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email.<br>We would be happy to answer your questions.</p>
                     </div>
                 </div>
-                  <form action="https://formspree.io/priteechaugule@gmail.com" method="POST">
+                <form id="contactform" action="https://formsubmit.io/send/b13c7f50-7c75-44d9-881b-4a01e3759ac9" method="POST">
+    <input name="_redirect" type="hidden" id="name" value="https://kodeitsolution.github.io/hytech/appt_new.html">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                          <!--<div class="wrapper_email_button pst_toppadder10">-->
             
                                  <p> <textarea id="subject" name="subject" placeholder="Enter your Query" style="height:90px"></textarea></p>
                               
-                                  <input type="submit" value="Submit">
+                                 <button onclick="myFunction()" button type="submit" value="Submit">Send</button>
+                                  
                              
                                 </form>
+                                <script>
+                                    function myFunction() {
+                                      alert("Your Query has been sent succesfully");
+                                    }
+                                    </script>
                               </div>
                         <!--<input type="email" placeholder="your email here">
                         <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>-->
