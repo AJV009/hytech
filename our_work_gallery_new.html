@@ -14,33 +14,37 @@ Purchase:
 
 <head>
 	<style type="text/css">
-        select{width:300px;}
-        textarea{
-            width:300px;
-            height:40px;
-           font-size:14pt;
-           align-items:flex-start ;
-          
-        
-        }
-        text:hover{
-            font-style:normal;
-        }
-       button{
-            width:150px;
-            height:50px;
-            font-size:50px;
-            border-color:rgb(2, 2, 2);
-            color:black;
-            background-color: #ecc204;
-        
-        }
-        button:hover{
-            color: #ecc204; 
-            background-color:rgb(17, 17, 17);
-            border-color: #ecc204;
-           
-        }
+        input[type=text], select, textarea {
+  width: 90%; /* Full width */
+  height:10%;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius:0%; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 20px; /* Add a top margin */
+  margin-bottom: 30px; /* Bottom margin */
+  resize:none; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    width:150px;
+    height:50px;
+  background-color: #ecc204;
+  color: black;
+  padding: 12px 20px;
+  border:black;
+  border-radius:0%;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:  black;
+  color:#ecc204;
+  border:#ecc204;
+
+}
         </style>
     <meta charset="utf-8">
     <title>gallery column </title>
@@ -759,18 +763,16 @@ Purchase:
                         <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email.<br>We would be happy to answer your questions.</p>
                     </div>
                 </div>
-                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                    <!--<div class="wrapper_email_button pst_toppadder10">-->
-                        <form>
-                            <p>
-                            <textarea name="Email" placeholder="your email here">
-                            </textarea>
-                            </p>
-                            <p><button type="submit" value="submit">Send email</button></p>
-                        <!--<input type="email" placeholder="your email here">
-                        <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>-->
+                 <form action="https://formspree.io/priteechaugule@gmail.com" method="POST">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+             <!--<div class="wrapper_email_button pst_toppadder10">-->
+
+                     <p> <textarea id="subject" name="subject" placeholder="Write something.." style="height:90px"></textarea></p>
+                  
+                      <input type="submit" value="Submit">
+                 
                     </form>
-                    </div>
+                  </div>
                 </div>
             </div>
         </div>
