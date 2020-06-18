@@ -14,33 +14,37 @@ Purchase:
 
 <head>
 	<style type="text/css">
-        select{width:300px;}
-        textarea{
-            width:300px;
-            height:40px;
-           font-size:14pt;
-           align-items:flex-start ;
-          
-        
-        }
-        text:hover{
-            font-style:normal;
-        }
-        button{
-            width:150px;
-            height:50px;
-            font-size:50px;
-            border-color:rgb(2, 2, 2);
-            color:black;
-            background-color: #ecc204;
-        
-        }
-        button:hover{
-            color: #ecc204; 
-            background-color:rgb(17, 17, 17);
-            border-color: #ecc204;
-           
-        }
+        input[type=text], select, textarea {
+  width: 90%; /* Full width */
+  height:10%;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius:0%; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 20px; /* Add a top margin */
+  margin-bottom: 30px; /* Bottom margin */
+  resize:none; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+button {
+    width:150px;
+    height:50px;
+  background-color: #ecc204;
+  color: black;
+  padding: 12px 20px;
+  border-color:black;
+  border-radius:0%;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button:hover {
+  background-color:  black;
+  color:#ecc204;
+  border-color:#ecc204;
+
+}
         </style>
     <meta charset="utf-8">
     <title>Services</title>
@@ -726,6 +730,39 @@ Purchase:
     </div>
     <!--pricing section end-->
     <!-- botm newslatter section start-->
+   <div class="btm_newslater_section">
+        <div class="btm_leter_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <div class="btm_newsletter_text">
+                        <h3>Have Any Question ?</h3>
+                        <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email.<br>We would be happy to answer your questions.</p>
+                    </div>
+                </div>
+		    <form id="QueryForm" action="https://formsubmit.io/send/b13c7f50-7c75-44d9-881b-4a01e3759ac9" method="POST">
+    <input name="_redirect" type="hidden" id="name" value="https://kodeitsolution.github.io/hytech/about_us_new.html">
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                         <!--<div class="wrapper_email_button pst_toppadder10">-->
+            
+                                 <p> <textarea id="subject" name="subject" placeholder="Enter your Query" style="height:90px"></textarea></p>
+                              
+                                   <button onclick="myFunction()" button type="submit" value="Submit">send</button>
+                                  
+                             
+                                </form>
+                                <script>
+                                    function myFunction() {
+                                      alert("Your Query has been sent succesfully");
+                                    }
+                                    </script>
+                              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- botm newslatter section end-->
+    <!-- footer section start-->
     <div class="footer_wrapper pst_toppadder70 pst_bottompadder60">
         <div class="container">
             <div class="footer_wrapper_first">
@@ -819,8 +856,8 @@ Purchase:
                                 <li><a href="our_work_gallery_new.html"><i class="fa fa-circle"></i>Our Work</a>
                                 </li>
                                <!-- <li><a href="services.html"><i class="fa fa-circle"></i>Our Team</a>
-                                </li>-->
-                                <li><a href="blog_new.html"><i class="fa fa-circle"></i>Blog</a>
+                                </li>
+                                <li><a href="blog_new.html"><i class="fa fa-circle"></i>Blog</a>-->
                                 </li>
                                 <li><a href="contact_us.html"><i class="fa fa-circle"></i>Contact Us</a>
                                 </li>
@@ -885,7 +922,7 @@ Purchase:
             <div class="row">
                 <div class="col-lg-10 col-md-10 col-xs-10 col-sm-10">
                     <div class="section3_copyright">
-                        <p>Copyright 2018 <a href="index.html">  HyTech Pest Control </a>. all right reserved - design by <a href="index.html">KodeIT Solutions</a></p>
+                        <p>Copyright 2018 <a href="index.html">  HyTech Pest Control </a>. all right reserved - design by <a href="index.html">kodeIT Solutions</a></p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-xs-2 col-sm-2">
