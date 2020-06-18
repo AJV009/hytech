@@ -328,7 +328,8 @@ button:hover {
                   <label for="email">Your Email</label>
                   <input type="email" id="email" name="email" placeholder="Your email.." required>
                   <label for="phone">Mobile no.</label>
-		        <label for="service">Select services</label>
+		   <input type="tel" id="phone" name="phone" pattern="[789][0-9]{9}"  placeholder="Phone" required>
+		  <label for="service">Select services</label>
                   <select id="service" name="service" form="apptform">
                     <option disabled="disabled" selected="selected">--Choose option</option>
             														<option value>Plant Insect Control</option>
@@ -342,7 +343,7 @@ button:hover {
             														<option value>Spider Control</option>
                   </select>
                  
-                  <input type="tel" id="phone" name="phone" pattern="[789][0-9]{9}"  placeholder="Phone" required>
+                
                    <label for="address">Address</label>
                   <textarea id="address" name="address" placeholder="Your address.." style="height:170px" required></textarea>
                   <label>Book a Date : </label>
