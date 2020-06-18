@@ -324,18 +324,11 @@ button:hover {
                <form id="apptform" action="https://formsubmit.io/send/b13c7f50-7c75-44d9-881b-4a01e3759ac9" method="POST">
     <input name="_redirect" type="hidden" id="name" value="https://kodeitsolution.github.io/hytech/appt_new.html">
                   <label for="fname">Full Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
                   <label for="email">Your Email</label>
-                  <input type="email" id="email" name="email" placeholder="Your email..">
+                  <input type="email" id="email" name="email" placeholder="Your email.." required>
                   <label for="phone">Mobile no.</label>
-                  <input type="tel" id="phone" name="phone" pattern="[789][0-9]{9}"  placeholder="Phone" required>
-                   <label for="address">Address</label>
-                  <textarea id="address" name="address" placeholder="Your address.." style="height:170px"></textarea>
-                  <label>Book a Date : </label>
-                  
-                     <p> <input type="Date" id="date" name="date"></p>
-		 
-                  <label for="service">Select services</label>
+		        <label for="service">Select services</label>
                   <select id="service" name="service" form="apptform">
                     <option disabled="disabled" selected="selected">--Choose option</option>
             														<option value>Plant Insect Control</option>
@@ -348,6 +341,14 @@ button:hover {
             														<option value>Termite Control</option>
             														<option value>Spider Control</option>
                   </select>
+                 
+                  <input type="tel" id="phone" name="phone" pattern="[789][0-9]{9}"  placeholder="Phone" required>
+                   <label for="address">Address</label>
+                  <textarea id="address" name="address" placeholder="Your address.." style="height:170px" required></textarea>
+                  <label>Book a Date : </label>
+                  
+                     <p> <input type="Date" id="date" name="date" required></p>
+		 
                  
                  
                   <center><button type="submit" value="Submit" style="width:30%" >Send</button></center>
