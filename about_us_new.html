@@ -13,7 +13,39 @@ Purchase:
 <!--[endif]-->
 
 <head>
-	
+		<style type="text/css">
+        input[type=text], select, textarea {
+  width: 90%; /* Full width */
+  height:10%;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius:0%; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 20px; /* Add a top margin */
+  margin-bottom: 30px; /* Bottom margin */
+  resize:none; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+button {
+    width:150px;
+    height:50px;
+  background-color: #ecc204;
+  color: black;
+  padding: 12px 20px;
+  border:black;
+  border-radius:0%;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button:hover {
+  background-color:  black;
+  color:#ecc204;
+  border:#ecc204;
+
+}
+        </style>
     <meta charset="utf-8">
     <title>about us new</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -306,7 +338,12 @@ Purchase:
     <!-- page_title_section start -->
     <div class="page_title_section">
         <div class="page_title_overlay"></div>
-     
+      <div class="container">
+            <div id="search_open" class="gc_search_box">
+                <input type="text" placeholder="Search here">
+                <button><i class="flaticon-magnifier"></i></button>
+            </div>
+	       <div class="menu_wrapper_mn">
                 <div class="row">
                     <!-- section_heading start -->
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
